@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+:root {
+  --text-color: #1b8c03;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Tajawal", Arial, sans-serif;
+  direction: rtl;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* small */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* medium */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* large */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* extra large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*  Start Header Section */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .container {
+  color: white;
+  display: flex;
+  position: relative;
+}
+
+header .container img {
+  margin: 20px;
+  width: 80px;
+}
+
+nav {
+  margin-right: 3rem;
+}
+
+nav ul {
+  margin-top: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  transition: 0, 3s;
+}
+
+nav ul li a:hover {
+  scale: 1.1;
+}
+
+.lang-select a {
+  color: white;
+  margin-right: 3rem;
+}
+
+/* End Header Section */
+
+/* Start Latest News Section */
+.latest-news {
+  padding: 50px;
+  background-color: #eee;
+}
+
+.latest-news .section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.latest-news .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 15px;
+}
+
+.latest-news .container .news {
+  background-color: white;
+  padding-bottom: 20px;
+  text-align: right;
+  width: 350px;
+  height: 450px;
+  box-shadow: 0 0 5px #6e6868;
+  transition: 0.3s;
+  position: relative;
+}
+
+.latest-news .container .news:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px #6e6868;
+}
+
+.latest-news .container .news img {
+  width: 100%;
+  height: 60%;
+  margin-bottom: 20px;
+}
+
+.latest-news .container .news p {
+  font-size: 1.2rem;
+  font-weight: 450;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+
+.latest-news .container .news .date {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-right: 5px;
+  margin-bottom: 40px;
+}
+
+.latest-news .container .news a {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 450;
+}
+
+/* End Latest News Section */
+
+/* Start Campaigns Section */
+.campaigns {
+  padding: 50px;
+}
+
+.campaigns .section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.campaigns .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 15px;
+}
+
+.campaigns .container .campaign {
+  background-color: white;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: right;
+  width: 350px;
+  height: 350px;
+  box-shadow: 0 0 5px #6e6868;
+  transition: 0.3s;
+  position: relative;
+}
+
+.campaigns .container .campaign:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px #6e6868;
+}
+
+.campaigns .container .campaign .day {
+  position: absolute;
+  right: 5px;
+  top: 7px;
+  background-color: var(--text-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.campaigns .container .campaign img {
+  width: 100%;
+  height: 80%;
+  margin-bottom: 20px;
+}
+
+.campaigns .container .campaign p {
+  font-size: 1.2rem;
+  font-weight: 450;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+
+/* End Campaigns Section */
+
+/* start hero section */
+.hero {
+  background-image: url(../images/YWU18-12-2022-880808.jpg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(40%);
+  height: 100vh;
+}
+
+/* Start Statistcs Section */
+.statistcs {
+  padding: 50px;
+  background-color: #eee;
+  position: relative;
+}
+
+.statistcs .section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.statistcs .overlay {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.466);
+}
+
+.statistcs .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.statistcs .container .stat {
+  background-image: url(../images/YWU2022-11-09-03-31-53-71513.jpg.webp);
+  background-size: cover;
+  object-fit: cover;
+  text-align: center;
+  padding: 20px 0;
+  cursor: pointer;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.stat-info {
+  z-index: 10;
+  color: white;
+}
+
+.statistcs .container .stat i {
+  font-size: 1.5rem;
+}
+.statistcs .container .stat h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.statistcs .container .stat p {
+  font-size: 20px;
+  font-weight: 800;
+}
+/* End Statistcs Section  */
+
+/* Start Partners Section  */
+.partners {
+  padding: 50px;
+}
+
+.partners .section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.partners .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.partners .container .partner {
+  padding: 20px 0;
+  height: 150px;
+  margin: 20px;
+}
+
+.partners .container .partner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* End Partners Section  */
+
+/* Start Footer Section */
+footer {
+   text-align: center;
+  padding: 50px;
+  padding-bottom: 10px;
+  background-color: #eee;
+}
+
+footer .section-title{
+   text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+
+footer .social-media i{
+    margin: 0 5px;
+    color: var(--text-color);
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+footer .social-media i:hover{
+  scale: 1.1;
+}
+
+footer p{
+  font-size: 1rem;
+  margin-top: 10px;
+  padding: 10px;
+}
+/* End Footer Section */
