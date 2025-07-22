@@ -1,0 +1,29 @@
+.contact-us {
+  padding: 70px;
+}
+
+.contact-us .section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.contact-us .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 15px;
+}
+
+.contact-us .container div {
+  background-color: #eee;
+  width: 350;
+  height: 200;
+  padding: 20px;
+  margin: 20px;
+  position: relative;
+}
+
+.contact-us .container div h4 {
+  margin-bottom: 10px;
+}

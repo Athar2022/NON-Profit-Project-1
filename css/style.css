@@ -357,7 +357,7 @@ footer .section-title{
 
 
 footer .social-media i{
-    margin: 0 5px;
+    margin:5px;
     color: var(--text-color);
     font-size: 2rem;
     transition: 0.3s;
