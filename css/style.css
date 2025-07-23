@@ -61,43 +61,49 @@ ul {
   }
 }
 
-/*  Start Header Section */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-header .container {
-  color: white;
-  display: flex;
-  position: relative;
-}
-
-header .container img {
-  margin: 20px;
-  width: 80px;
+.main-header {
+  background-image: url(../images/YWU18-12-2022-880808.jpg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(40%);
+  height: 100vh;
 }
 
 nav {
-  margin-right: 3rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 100%;
+  width: 100vw;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  margin: 10px 40px 10px 20px;
+  width: 80px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 nav ul {
-  margin-top: 30px;
+  margin-right: 50px;
   font-size: 1rem;
   font-weight: bold;
   display: flex;
-}
-
-nav ul li {
-  margin-right: 1rem;
+  gap: 25px;
 }
 
 nav ul li a {
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 0.5rem 1rem;
-  display: flex;
   transition: 0, 3s;
 }
 
@@ -105,9 +111,38 @@ nav ul li a:hover {
   scale: 1.1;
 }
 
-.lang-select a {
+nav .mode {
+  margin-right: 600px;
+}
+
+nav .mode a {
   color: white;
-  margin-right: 3rem;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+nav .mode a:hover {
+  color: #ffd700;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: black;
+}
+
+body.dark-mode nav {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode nav ul li a,
+body.dark-mode .mode a {
+  color: #f1f1f1;
+}
+
+body.dark-mode nav ul li a:hover,
+body.dark-mode .mode a:hover {
+  color: #ffcc00;
 }
 
 /* End Header Section */
@@ -234,16 +269,6 @@ nav ul li a:hover {
 
 /* End Campaigns Section */
 
-/* start hero section */
-.hero {
-  background-image: url(../images/YWU18-12-2022-880808.jpg.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  filter: brightness(40%);
-  height: 100vh;
-}
-
 /* Start Statistcs Section */
 .statistcs {
   padding: 50px;
@@ -328,6 +353,7 @@ nav ul li a:hover {
 }
 
 .partners .container .partner {
+  flex: 0 0 250px;
   padding: 20px 0;
   height: 150px;
   margin: 20px;
@@ -338,36 +364,118 @@ nav ul li a:hover {
   height: 100%;
   object-fit: cover;
 }
+
 /* End Partners Section  */
 
 /* Start Footer Section */
 footer {
-   text-align: center;
+  text-align: center;
   padding: 50px;
   padding-bottom: 10px;
   background-color: #eee;
+  position: relative;
 }
 
-footer .section-title{
-   text-align: center;
+footer .section-title {
+  text-align: center;
   font-size: 1.5rem;
   margin-bottom: 30px;
   color: var(--text-color);
 }
 
-
-footer .social-media i{
-    margin:5px;
-    color: var(--text-color);
-    font-size: 2rem;
-    transition: 0.3s;
+footer .social-media i {
+  margin: 5px;
+  color: var(--text-color);
+  font-size: 2rem;
+  transition: 0.3s;
 }
 
-footer .social-media i:hover{
+footer .social-media i:hover {
   scale: 1.1;
 }
 
-footer p{
+footer .container img {
+  width: 200px;
+  position: absolute;
+  right: 20px;
+  top: 7px;
+  padding: 5px 10px;
+}
+footer .sub-container {
+  display: flex;
+}
+
+footer .input-holder {
+  text-align: right;
+  padding: 40px 20px;
+}
+
+footer .input-holder h4 {
+  font-family: "Tajawal", Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 450;
+  margin: 15px;
+}
+
+footer .input-holder form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer .input-holder input {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  min-width: 250px;
+}
+
+footer .input-holder button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: var(--text-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+footer .input-holder button:hover {
+  font-weight: bold;
+  background-color: #eee;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+}
+
+footer .input-holder .links ul {
+  text-align: left;
+}
+
+footer .input-holder .links ul li {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+}
+
+footer .links {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 40px 20px;
+  margin-right: 300px;
+}
+
+footer .links ul {
+  text-align: right;
+}
+
+footer .links ul a {
+  font-size: 1.2rem;
+}
+footer .links ul a i {
+  margin: 5px;
+}
+
+footer p {
   font-size: 1rem;
   margin-top: 10px;
   padding: 10px;

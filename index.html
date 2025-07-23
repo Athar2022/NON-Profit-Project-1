@@ -5,36 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اتحاد نساء اليمن</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="../images/ywu-logo.png">
+    <link rel="icon" href="../images/ywu-logo.png">
 
 </head>
 
 <body>
-
+    <nav>
+        <img src="images/logo.png" alt="logo of Yemen Women Union">
+        <i id="icon-mobile" class="fa-solid fa-bars"></i>
+        <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="pages/about.html">من نحن </a></li>
+            <li><a href="pages/success-stories.html">قصص نجاح</a></li>
+            <li><a href="pages/contact-us.html">اتصل بنا</a></li>
+        </ul>
+        <div class="mode">
+            <a href="#" id="toggle-mode"><i class="fa-solid fa-moon"></i></a>
+        </div>
+    </nav>
     <!-- Start Header Section  -->
-    <div class="hero">
-        <header>
-            <div class="container">
-                <img src="images/YWU-logo-wh.png" alt="logo of Yemen Women Union">
-
-                <nav>
-                    <ul>
-                        <li><a href="#">الرئيسية</a></li>
-                        <li><a href="pages/about.html">من نحن </a></li>
-                        <li><a href="pages/success-stories.html">قصص نجاح</a></li>
-                        <li><a href="pages/contact-us.html">اتصل بنا</a></li>
-                    </ul>
-                    <div class="lang-select"><a href="#">En</a></div>
-
-                </nav>
-                <!-- <div class="lang-select"><a href="#">En</a></div> -->
-
-            </div>
-        </header>
-    </div>
-
+    <header class="main-header">
+        <div class="container">
+        </div>
+    </header>
     <!-- End Header Section -->
 
 
@@ -144,17 +139,19 @@
         <h2 class="section-title">شركاء النجاح</h2>
         <div class="container">
             <div class="partner">
-                <img src="images/OXFAM.webp" alt="">
+                <img src="images/partners/FAO.webp" alt="">
             </div>
             <div class="partner">
-                <img src="images/UNFPA.webp" alt="">
+                <img src="images/partners/UNFPA.webp" alt="">
             </div>
             <div class="partner">
-                <img src="images/UNICEF.webp" alt="">
+                <img src="images/partners/UNICEF.webp" alt="">
             </div>
             <div class="partner">
-                <img src="images/YHF.webp" alt="">
+                <img src="images/partners/OXFAM.webp" alt="">
             </div>
+        </div>
+
 
     </section>
     <!-- End Partners Section -->
@@ -171,17 +168,46 @@
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
             </div>
+            <img src="images/footer-logo.png" alt="footer logo">
+            <div class="sub-container">
 
+                <div class="input-holder">
+                    <h4> النشرة البريدية</h4>
+                    <form>
+                        <input type="text" name="email" placeholder="البريد الالكتروني" required>
+                        <button submit>اشتراك</button>
+                    </form>
+                </div>
+                <div class="links">
+                    <ul>
+                        <a>
+                            <li><i class="fa-solid fa-envelope"></i>info@yemenwu.org</li>
+                        </a>
+                        <a>
+                            <li><i class="fa-solid fa-square-phone"></i>00967-1-480489</li>
+                        </a>
+                        <a>
+                            <li><i class="fa-solid fa-location-dot"></i>المكتب التنفيذي صنعاء - التحرير خلف البنك
+                                المركزي
+                            </li>
+                        </a>
+                        <a>
+                            <li><i class="fa-solid fa-inbox"></i>صندوق بريد: 3541</li>
+                        </a>
+                    </ul>
+                </div>
+
+            </div>
         </div>
         <hr>
-
         <p>جميع الحقوق محفوظة &copy; 2025 اتحاد نساءاليمن </p>
 
     </footer>
     <!-- End Footer Section -->
 
+    <script src="js/main.js"></script>
 </body>
 
 </html>

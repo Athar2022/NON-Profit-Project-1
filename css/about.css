@@ -1,9 +1,11 @@
-header .container{
-    background-image: url(../images/background.jpg);
-     background-size: cover;
-    background-position: center;
-    height: 150px;
+header {
+  height: 40vh;
+  background-image: url(../images/b2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
 main .about {
   font-size: 1.2rem;
   padding: 50px;
@@ -22,9 +24,8 @@ main .video {
   margin: 20px;
 }
 
-main .video iframe{
-    width: 800px;
-    height: 500px;
-    padding: 20px;
-
+main .video iframe {
+  width: 800px;
+  height: 500px;
+  padding: 20px;
 }
