@@ -13,9 +13,16 @@
 
 <body>
 
+    
     <!-- Start Header Section  -->
+    <header>
+        <div class="container">
+        </div>
+    </header>
+
     <nav>
         <img src="../images/logo.png" alt="logo of Yemen Women Union">
+       <a class="menu-toggle" id="menu-toggle"> <i  class="fa-solid fa-bars"></i> </a>
         <ul>
             <li><a href="../index.html">الرئيسية</a></li>
             <li><a href="../pages/about.html">من نحن </a></li>
@@ -26,11 +33,6 @@
             <a href="#" id="toggle-mode"><i class="fa-solid fa-moon"></i></a>
         </div>
     </nav>
-    <header>
-        <div class="container">
-        </div>
-    </header>
-
     <!-- End Header Section -->
 
     <section class="contact-us">
@@ -63,69 +65,70 @@
             <input type="email" id="email" placeholder="البريد الالكتروني" required>
             <input type="text" id="phone" placeholder="رقم الهاتف" required>
             <input type="text" id="subject" placeholder=" المنظمة" required>
-            <textarea name="msg" id="message">الرسالة</textarea>
+            <textarea name="msg" id="message" placeholder="الرسالة"></textarea>
             <button type="submit">ارسال</button>
         </form>
-
     </section>
 
 
+    <section class="map">
+        <h2> موقع المؤسسة</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3847.4909324680107!2d44.21181942614226!3d15.349876058296266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1603dbcc0ee7389f%3A0xe63d611e4c2e09b5!2z2KXYqtit2KfYryDZhtiz2KfYoSDYp9mE2YrZhdmG!5e0!3m2!1sar!2s!4v1753344497375!5m2!1sar!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
 
 
-
+    
     <!-- Start Footer Section -->
-    <footer>
-        <h2 class="section-title"> شبكات التواصل الاجتماعي</h2>
+   <footer>
+  <h2 class="section-title">شبكات التواصل الاجتماعي</h2>
 
-        <div class="container">
-            <div class="contact"></div>
-            <h4>تابعونا في:</h4>
-            <div class="social-media">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-            </div>
-            <img src="images/footer-logo.png" alt="footer logo">
-            <div class="sub-container">
+  <div class="container">
+    <div class="contact">
+      <h4>تابعونا في:</h4>
+      <div class="social-media">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      </div>
+    </div>
 
-                <div class="input-holder">
-                    <h4> النشرة البريدية</h4>
-                    <form>
-                        <input type="text" name="email" placeholder="البريد الالكتروني" required>
-                        <button submit>اشتراك</button>
-                    </form>
-                </div>
-                <div class="links">
-                    <ul>
-                        <a>
-                            <li><i class="fa-solid fa-envelope"></i>info@yemenwu.org</li>
-                        </a>
-                        <a>
-                            <li><i class="fa-solid fa-square-phone"></i>00967-1-480489</li>
-                        </a>
-                        <a>
-                            <li><i class="fa-solid fa-location-dot"></i>المكتب التنفيذي صنعاء - التحرير خلف البنك
-                                المركزي
-                            </li>
-                        </a>
-                        <a>
-                            <li><i class="fa-solid fa-inbox"></i>صندوق بريد: 3541</li>
-                        </a>
-                    </ul>
-                </div>
+    <div class="sub-container">
+     
+      <div class="footer-logo">
+        <img src="../images/footer-logo.png" alt="footer logo" />
+      </div>
 
-            </div>
+      
+      <div class="input-holder">
+        <h4>النشرة البريدية</h4>
+        <form>
+          <input type="text" name="email" placeholder="البريد الالكتروني" required />
+          <button type="submit">اشتراك</button>
+        </form>
+      </div>
 
+      
+      <div class="links">
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i> info@yemenwu.org</li>
+          <li><i class="fa-solid fa-square-phone"></i> 00967-1-480489</li>
+          <li><i class="fa-solid fa-location-dot"></i> المكتب التنفيذي - صنعاء</li>
+          <li><i class="fa-solid fa-inbox"></i> صندوق بريد: 3541</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
+  <hr />
+  <p>جميع الحقوق محفوظة &copy; 2025 اتحاد نساء اليمن</p>
+</footer>
 
-        </div>
-        <hr>
-
-        <p>جميع الحقوق محفوظة &copy; 2025 اتحاد نساءاليمن </p>
-
-    </footer>
     <!-- End Footer Section -->
+
 
     <script src="../js/main.js"></script>
 </body>

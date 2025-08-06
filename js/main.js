@@ -1,3 +1,12 @@
+//Menue
+ 
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.querySelector('nav ul');
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+
+
 // Dark Mode
 const toggleBtn = document.getElementById("toggle-mode");
 const icon = toggleBtn.querySelector("i");
@@ -19,6 +28,8 @@ toggleBtn.addEventListener("click", (e) => {
   localStorage.setItem("dark-mode", isDark);
 });
 
+
+//Validation
 document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault(); //
 

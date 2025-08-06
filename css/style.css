@@ -3,6 +3,7 @@
 :root {
   --text-color: #1b8c03;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -33,34 +34,32 @@ ul {
   margin-right: auto;
 }
 
-/* small */
-@media (max-width: 768px) {
+/* Responsive Grid Containers */
+/* @media (max-width: 768px) {
   .container {
     width: 100%;
   }
 }
 
-/* medium */
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
     width: 750px;
   }
 }
 
-/* large */
 @media (min-width: 992px) and (max-width: 1199px) {
   .container {
     width: 970px;
   }
 }
 
-/* extra large */
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
-}
+} */
 
+/* Header Background */
 .main-header {
   background-image: url(../images/YWU18-12-2022-880808.jpg.webp);
   background-repeat: no-repeat;
@@ -70,9 +69,9 @@ ul {
   height: 100vh;
 }
 
+/* Navigation */
 nav {
   background-color: rgba(0, 0, 0, 0.2);
-  opacity: 100%;
   width: 100vw;
   height: 100px;
   position: fixed;
@@ -80,39 +79,38 @@ nav {
   z-index: 1000;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
 }
 
 nav img {
-  margin: 10px 40px 10px 20px;
   width: 80px;
 }
 
 .menu-toggle {
   display: none;
-  font-size: 24px;
+  font-size: 2rem;
+  color: white;
   cursor: pointer;
+  order: -1;
 }
 
 nav ul {
-  margin-right: 50px;
+  margin-right: 30px;
   font-size: 1rem;
   font-weight: bold;
   display: flex;
-  gap: 25px;
+  align-items: center;
 }
 
 nav ul li a {
   color: rgb(255, 255, 255);
-  padding: 0.5rem 1rem;
-  transition: 0, 3s;
+  transition: 0.3s;
+  margin: 0 10px;
 }
 
 nav ul li a:hover {
   scale: 1.1;
-}
-
-nav .mode {
-  margin-right: 600px;
 }
 
 nav .mode a {
@@ -142,12 +140,10 @@ body.dark-mode .mode a {
 
 body.dark-mode nav ul li a:hover,
 body.dark-mode .mode a:hover {
-  color: #ffcc00;
+  color: #818079;
 }
 
-/* End Header Section */
-
-/* Start Latest News Section */
+/* Latest News */
 .latest-news {
   padding: 50px;
   background-color: #eee;
@@ -162,7 +158,7 @@ body.dark-mode .mode a:hover {
 
 .latest-news .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 15px;
 }
 
@@ -170,8 +166,8 @@ body.dark-mode .mode a:hover {
   background-color: white;
   padding-bottom: 20px;
   text-align: right;
-  width: 350px;
-  height: 450px;
+  width: 300px;
+  height: 400px;
   box-shadow: 0 0 5px #6e6868;
   transition: 0.3s;
   position: relative;
@@ -192,25 +188,23 @@ body.dark-mode .mode a:hover {
   font-size: 1.2rem;
   font-weight: 450;
   margin-right: 5px;
-  margin-bottom: 15px;
 }
 
 .latest-news .container .news .date {
   font-size: 1rem;
   font-weight: 400;
   margin-right: 5px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .latest-news .container .news a {
   color: var(--text-color);
   font-size: 1rem;
   font-weight: 450;
+  margin-right: 5px;
 }
 
-/* End Latest News Section */
-
-/* Start Campaigns Section */
+/* Campaigns */
 .campaigns {
   padding: 50px;
 }
@@ -224,7 +218,7 @@ body.dark-mode .mode a:hover {
 
 .campaigns .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 15px;
 }
 
@@ -233,7 +227,7 @@ body.dark-mode .mode a:hover {
   padding-bottom: 20px;
   margin-bottom: 20px;
   text-align: right;
-  width: 350px;
+  width: 300px;
   height: 350px;
   box-shadow: 0 0 5px #6e6868;
   transition: 0.3s;
@@ -254,6 +248,7 @@ body.dark-mode .mode a:hover {
   padding: 5px 10px;
   border-radius: 5px;
 }
+
 .campaigns .container .campaign img {
   width: 100%;
   height: 80%;
@@ -267,9 +262,7 @@ body.dark-mode .mode a:hover {
   margin-bottom: 15px;
 }
 
-/* End Campaigns Section */
-
-/* Start Statistcs Section */
+/* Statistics */
 .statistcs {
   padding: 50px;
   background-color: #eee;
@@ -293,17 +286,14 @@ body.dark-mode .mode a:hover {
 
 .statistcs .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
 
 .statistcs .container .stat {
-  background-image: url(../images/YWU2022-11-09-03-31-53-71513.jpg.webp);
+  background-image: url(../images/project-photo.webp);
   background-size: cover;
-  object-fit: cover;
   text-align: center;
-  padding: 20px 0;
-  cursor: pointer;
   height: 300px;
   width: 300px;
   border-radius: 50%;
@@ -323,6 +313,7 @@ body.dark-mode .mode a:hover {
 .statistcs .container .stat i {
   font-size: 1.5rem;
 }
+
 .statistcs .container .stat h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
@@ -332,9 +323,8 @@ body.dark-mode .mode a:hover {
   font-size: 20px;
   font-weight: 800;
 }
-/* End Statistcs Section  */
 
-/* Start Partners Section  */
+/* Partners */
 .partners {
   padding: 50px;
 }
@@ -348,13 +338,13 @@ body.dark-mode .mode a:hover {
 
 .partners .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
 }
 
 .partners .container .partner {
-  flex: 0 0 250px;
   padding: 20px 0;
+  width: 200px;
   height: 150px;
   margin: 20px;
 }
@@ -365,53 +355,60 @@ body.dark-mode .mode a:hover {
   object-fit: cover;
 }
 
-/* End Partners Section  */
-
-/* Start Footer Section */
+/* Footer */
 footer {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
   text-align: center;
-  padding: 50px;
-  padding-bottom: 10px;
-  background-color: #eee;
-  position: relative;
+  direction: rtl;
+  font-family: "Tajawal", sans-serif;
 }
 
 footer .section-title {
-  text-align: center;
   font-size: 1.5rem;
-  margin-bottom: 30px;
   color: var(--text-color);
+  margin-bottom: 20px;
 }
 
-footer .social-media i {
-  margin: 5px;
-  color: var(--text-color);
+footer .social-media a {
+  color: #333;
   font-size: 2rem;
-  transition: 0.3s;
+  margin: 0 10px;
+  transition: color 0.3s;
 }
 
-footer .social-media i:hover {
-  scale: 1.1;
+footer .social-media a:hover {
+  color: var(--text-color);
 }
 
-footer .container img {
-  width: 200px;
-  position: absolute;
-  right: 20px;
-  top: 7px;
-  padding: 5px 10px;
-}
 footer .sub-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: right;
+}
+
+footer .footer-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-logo img {
+  width: 200px;
 }
 
 footer .input-holder {
+  flex: 1;
   text-align: right;
-  padding: 40px 20px;
+  padding: 20px;
+  margin-left: 40px;
 }
 
 footer .input-holder h4 {
-  font-family: "Tajawal", Arial, sans-serif;
   font-size: 1.2rem;
   font-weight: 450;
   margin: 15px;
@@ -419,7 +416,6 @@ footer .input-holder h4 {
 
 footer .input-holder form {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
 
@@ -446,38 +442,139 @@ footer .input-holder button:hover {
   color: var(--text-color);
 }
 
-footer .input-holder .links ul {
-  text-align: left;
-}
-
-footer .input-holder .links ul li {
-  display: flex;
-  justify-content: right;
-  align-items: end;
-}
-
 footer .links {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  padding: 40px 20px;
-  margin-right: 300px;
+  flex: 1;
 }
 
 footer .links ul {
-  text-align: right;
+  list-style: none;
+  padding: 0;
 }
 
-footer .links ul a {
-  font-size: 1.2rem;
+footer .links li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #333;
 }
-footer .links ul a i {
-  margin: 5px;
+
+footer .links li i {
+  margin-left: 8px;
+  color: #333;
+}
+
+footer hr {
+  margin-top: 40px;
+  border: none;
+  border-top: 1px solid #ccc;
 }
 
 footer p {
+  margin-top: 15px;
   font-size: 1rem;
-  margin-top: 10px;
-  padding: 10px;
 }
-/* End Footer Section */
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .main-header {
+    width: 100vw;
+  }
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    order: 3;
+    margin-right: 10px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: auto;
+    padding: 10px 20px;
+    display: flex;
+  }
+
+  nav img {
+    order: 1;
+    margin-left: auto;
+  }
+
+  nav .mode {
+    order: 2;
+    margin-left: 10px;
+  }
+
+  nav ul {
+    order: 4;
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .latest-news .container,
+  .campaigns .container,
+  .statistcs .container,
+  .partners .container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .latest-news .container .news,
+  .campaigns .container .campaign,
+  .statistcs .container .stat {
+    width: 300px;
+    height: 350px;
+  }
+
+  .partners .container .partner {
+    width: 300px;
+    height: 200px;
+  }
+  .statistcs .overlay {
+    width: 250px;
+    height: 250px;
+  }
+  .statistcs .container .stat {
+    width: 250px;
+    height: 250px;
+  }
+
+  footer .sub-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .input-holder {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  footer .input-holder form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer .input-holder input {
+    min-width: 100%;
+  }
+
+  footer .input-holder button {
+    width: 100%;
+  }
+}
